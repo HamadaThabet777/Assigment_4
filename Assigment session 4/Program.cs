@@ -1,4 +1,6 @@
-﻿using System.Xml.Linq;
+﻿using System;
+using System.Drawing;
+using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assigment_session_4
@@ -81,17 +83,6 @@ namespace Assigment_session_4
             //else
             //    Console.WriteLine("Invalid input. Time must be 2 hours or more");
 
-
-
-
-
-
-
-
-
-
-
-
             #endregion
 
             #region problem3
@@ -145,52 +136,250 @@ namespace Assigment_session_4
             //}            
             //Console.WriteLine($"\nSum of elements is : {sum}");
 
-
-
-
-
             #endregion
 
             #region problem21
-            int [] arr1 = { 1, 5, 9 , 4 , 3};
-            Console.Write("items in array 1  is : ");
-            for (int i = 0; i < arr1.Length; i++) 
-            {
-                Console.Write($"{arr1[i]} \t ");
-            }
-            Console.WriteLine();
-            Console.Write("items in array 2  is : ");
-            int[] arr2 ={ 15, 14, 7 , 30 , 12 };
-            for (int i = 0; i < arr2.Length; i++)
-            {
-                Console.Write($"{arr2[i]}\t");
-            }
+            /* السؤال
+             21- Write a program in C# Sharp to merge two arrays of the same size sorted in ascending order.
+             */
+            //Console.Write("please enter size of arrays : ");
+            //int SizeArray =int.Parse(Console.ReadLine());
 
-            //int[] merge = new int arr1.Length + arr2.Length;
-            //Array.merge
+            //int[] arr1 = new int[SizeArray];
+            //int[] arr2 = new int[SizeArray];
+
+            //Console.WriteLine("Enter elements of the first sorted array:");
+            //for (int i = 0; i < SizeArray; i++)
+            //{
+            //    Console.Write($"Element {i + 1}: ");
+            //    arr1[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //Console.WriteLine("Enter elements of the second sorted array:");
+            //for (int i = 0; i < SizeArray; i++)
+            //{
+            //    Console.Write($"Element {i + 1}: ");
+            //    arr2[i] = int.Parse(Console.ReadLine());
+            //}
+            //int[] merge = new int[arr1.Length + arr2.Length];
+            //arr1.CopyTo(merge, 0);
+            //arr2.CopyTo(merge, arr1.Length);
+
+            //Array.Sort(merge);
+
+            //Console.WriteLine();
+            //Console.WriteLine("Merged and sorted array:");
+            //for (int i = 0; i < merge.Length; i++)
+            //{
+            //    Console.Write(merge[i] + " "); // هطبع كل عنصر
+            //}
+
             #endregion
 
-            #region problem7
+            #region problem22
+            /*السؤال
+             22- Write a program in C# Sharp to count the frequency of each element of an array.
+             */
+           
+            #endregion
+
+            #region problem23
+            /*السؤال
+            23- Write a program in C# Sharp to find maximum and minimum element in an array
+            */
+            //Console.Write("Enter your size of array ");
+            //int size=int.Parse(Console.ReadLine()); 
+            //int[] items = new int[size];
+            //for (int i = 0; i < items.Length; i++)
+            //{
+            //    Console.Write($"item {i + 1} : ");
+            //    items[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int maximum = 0;
+            //int minimum = int.MaxValue;
+            ////اكبر قيمه ممكنه بحيث ان اي رقم هيدخل هيكون اصغر منها smallest  بقوله خلي قيمه ال
+
+            //for (int i = 0; i < items.Length; i++)
+            //{
+            //    if (items[i]< minimum)
+            //    {
+            //        minimum = items[i];
+            //    }
+            //    else if (items[i] > maximum)
+            //    {
+            //        maximum = items[i];
+            //    }
+            //}
+            //Console.Write("items in array is :");
+            //for (int i = 0; i < items.Length; i++)
+
+            //    Console.Write($"{items[i]} ");
+
+
+            //Console.WriteLine($"\nminimum number is : {minimum}");
+            //Console.WriteLine($"maximum number is : {maximum}");
+
 
             #endregion
 
-            #region problem8
+            #region problem24
+            /* السؤال
+             24- Write a program in C# Sharp to find the second largest element in an array. 
+            */
+            //Console.Write("Enter your size of array ");
+            //int size = int.Parse(Console.ReadLine());
+            //int[] items = new int[size];
+            //for (int i = 0; i < items.Length; i++)
+            //{
+            //    Console.Write($"item {i + 1} : ");
+            //    items[i] = int.Parse(Console.ReadLine());
+            //}
+            //int Maximum = 0;
+            //int SecondMaximum = 0;
+            //for (int i = 0; i < items.Length; i++)
+            //{ 
+            //if (items[i] > Maximum)
+            //    {   
+
+            //        SecondMaximum = Maximum; 
+            //        Maximum = items[i];
+            //    }
+
+            //}
+            //Console.Write("items in array is :");
+            //for (int i = 0; i < items.Length; i++)
+
+            //    Console.Write($"{items[i]} ");
+
+            //Console.WriteLine($"\nSecond Maximum number is : {SecondMaximum}");
+            #endregion
+
+            #region problem25
+            /*السؤال
+             25-. Consider an Array of Integer values with size N, having values as    
+              in this Example write a program find the longest distance between Two equal cells. In this example. The distance is measured by the number Of cells- for example, the distance between the first and the fourth cell is 2 (cell 2 and cell 3).
+             In the example above, the longest distance is between the first 7 and the
+             10th 7, with a distance of 8 cells, i.e. the number of cells between the 1st
+              And the 10th 7s.
+
+                Note:
+                - Array values will be taken from the user
+                - If you have input like 1111111 then the distance is the number of
+                Cells between the first and the last cell.
+
+            */
+
+            //Console.Write("Please Enter Size Of Array : ");
+            //int size = int.Parse(Console.ReadLine());
+            //int count = 0;
+            //int[] n = new int[size];
+            //for (int i = 0; i < size; i++)
+            //{
+            //    Console.Write($"item {i + 1} is :");
+            //    n[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //for (int i = 0; i < size; i++)
+            //{
+
+            //    for (int j = 0; j < size; j++)
+            //    {
+            //        if (n[i] == n[j])
+            //        {
+            //            int distance = j - i- 1 ;
+
+            //            if (distance > count)
+            //            {
+            //                count = distance;
+            //            }
+            //        }
+
+            //    }
+            //}
+            //Console.WriteLine($"The longest distance between two equal elements is: {count}");
+            #endregion
+
+            #region problem26
+            /*السؤال
+             26- Given a list of space separated words, reverse the order of the words.
+            Input: this is a test		Output: test a is this
+            Input: all your base		Output: base your all
+            Input: Word			Output: Word
+            Note : 
+            Check the Split Function (Member in String Class) Output will be a Single Console.WriteLine Statement
+            */
+            //Console.WriteLine("pleas enter num of stetments to get the reverse");
+            //string word = Console.ReadLine();
+            //string[] stetments = word.Split(' ');
+
+            //Console.Write("Output after reverse: ");
+            //for (int i = stetments.Length - 1; i >= 0; i--)
+            //{
+
+            //    Console.Write($"{stetments[i]} ");
+            //}
 
             #endregion
 
-            #region problem9
+            #region problem27
+            /*السؤال
+27- Write a program to create two multidimensional arrays of same size. Accept value from user and store them in first array. Now copy all the elements of first array on second array and print second array. */
+
+            //Console.Write("Enter the size of the square array (rows and columns): ");
+            //int size = int.Parse(Console.ReadLine());
+
+            //int[,] sub = new int[size, size];
+            //int[,] sub2 = new int[size, size];
+
+            //Console.WriteLine("Enter the elements for the first array:");
+            //for (int i = 0; i < size; i++) 
+            //{
+            //    for (int j = 0; j < size; j++) 
+            //    {
+            //        Console.Write($"Element at [{i},{j}]: ");
+            //        sub[i, j] = int.Parse(Console.ReadLine());
+            //    }
+            //}
+
+            //for (int i = 0; i < size; i++)
+            //{
+            //    for (int j = 0; j < size; j++) 
+            //    {
+            //        sub2[i, j] = sub[i, j];
+            //    }
+            //}
+
+            //Console.WriteLine("\nElements in the second array are:");
+            //for (int i = 0; i < size; i++)
+            //{
+            //    for (int j = 0; j < size; j++) 
+            //    {
+            //        Console.Write(sub2[i, j] + " ");
+            //    }
+            //    Console.WriteLine(); 
+            //}
+
+
 
             #endregion
 
-            #region problem10
+            #region problem28
+            //Console.Write("pleas enter num of item to get the reverse :");
+            //int item =int.Parse(Console.ReadLine());
+            //int[] reverse = new int[item];
+            //Console.WriteLine($"item before reverse is : ");
+            //for (int i = 0; i < item; i++)
+            //{
+            //    Console.Write($"item {i + 1} is :");
+            //    reverse[i] = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine($"item after reverse is : ");
+            //for (int i = item - 1; i >= 0; i--)
+            //{
+            //    Console.Write($"{reverse[i]} \n");
+            //}
 
-            #endregion
-
-            #region problem11
-
-            #endregion
-
-            #region problem12
 
             #endregion
 
@@ -198,4 +387,4 @@ namespace Assigment_session_4
         }
     }
 
-}
+    }
